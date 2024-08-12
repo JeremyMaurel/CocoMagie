@@ -1,5 +1,15 @@
-.custom-size{width:80px ;}
+.custom-size {
+  width: 80px;
+}
 
-.pt-interrow{padding-top: 10rem;}
+.pt-interrow {
+  padding-top: 10rem;
+}
 
-.col {border: #f0f 1px solid;}
+.col {
+  border: #f0f 1px solid;
+}
+
+.text-justify {
+  text-align: justify;
+}
