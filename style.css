@@ -13,3 +13,13 @@
 .text-justify {
   text-align: justify;
 }
+
+.social-link {
+  color: black;
+}
+.social-link svg {
+  transition: all 0.2s;
+}
+.social-link svg:hover {
+  color: red;
+}
