@@ -23,3 +23,7 @@
 .social-link svg:hover {
   color: red;
 }
+
+#floatingTextarea {
+  height: 8rem;
+}
