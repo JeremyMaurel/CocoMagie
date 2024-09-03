@@ -1,29 +1,212 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .custom-size {
   width: 80px;
-}
-
-.pt-interrow {
-  padding-top: 10rem;
-}
-
-.col {
-  border: #f0f 1px solid;
 }
 
 .text-justify {
   text-align: justify;
 }
 
+.logo {
+  height: 96px;
+}
+
+.nav-link {
+  color: white;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  color: #b8860b;
+  text-shadow: 1px 0 0 #b8860b;
+}
+
 .social-link {
-  color: black;
+  color: white;
 }
 .social-link svg {
   transition: all 0.2s;
 }
 .social-link svg:hover {
-  color: red;
+  color: #b8860b;
 }
 
 #floatingTextarea {
   height: 8rem;
+}
+
+.navbar {
+  background-color: #2c0606;
+  padding-left: 96px;
+}
+
+h1 {
+  color: #b8860b;
+}
+
+.carousel-description {
+  background-color: rgba(155, 155, 155, 0.3);
+  opacity: 0.85;
+  color: white;
+}
+
+.carousel-title {
+  background-color: rgba(155, 155, 155, 0.3);
+  opacity: 0.85;
+}
+
+section {
+  padding: 5% 15%;
+}
+
+@media (max-width: 767.98px) {
+  .carousel-description {
+    font-size: 0.5rem;
+    text-shadow: 1px 0 0 black;
+  }
+
+  .carousel-title {
+    font-size: 0.75rem;
+    text-shadow: 1px 0 0 black;
+  }
+
+  section {
+    padding: 20% 2%;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .logo {
+    height: 64px;
+  }
+
+  .social-link svg {
+    height: 32px;
+    color: #b8860b;
+  }
+}
+
+.scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: rgba(55, 55, 55, 0.2);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.scrollTopBtn:hover {
+  background-color: #333;
+}
+
+.background {
+  background-image: linear-gradient(
+      rgba(44, 6, 6, 1),
+      rgba(255, 255, 255, 0),
+      rgba(44, 6, 6, 1)
+    ),
+    url('./img/bg2.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.second-background {
+  background-image: linear-gradient(
+      rgba(44, 6, 6, 1),
+      rgba(255, 255, 255, 0),
+      rgba(44, 6, 6, 1)
+    ),
+    url('./img/bg1.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#presentation p {
+  color: white;
+}
+
+h2 {
+  color: #b8860b;
+  text-shadow: 0 0 2px white;
+
+  font-weight: bold;
+}
+#closeUp p {
+  color: white;
+}
+
+#PreviousPrestation {
+  background: white;
+  background: linear-gradient(
+    rgba(44, 6, 6, 1),
+    rgba(44, 6, 6, 0.1),
+    rgba(255, 255, 255, 1),
+    rgba(44, 6, 6, 0.1),
+    rgba(44, 6, 6, 1)
+  );
+}
+
+.social-div {
+  margin-top: 10%;
+  padding: 0;
+}
+
+form button {
+  background-color: #b8860b;
+  border: none;
+  border-radius: 0.35rem;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  background-color: white;
+  color: #b8860b;
+}
+
+footer {
+  background-color: grey;
+  padding: 0.5rem 2.5%;
+  font-size: 0.7rem;
+  color: black;
+}
+
+.legal-infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.legal-infos p {
+  width: 29%;
+}
+
+.site-developer a {
+  text-decoration: none;
+  color: black;
+}
+
+.site-developer a:hover {
+  color: white;
+  text-shadow: 1px 0 0 white;
+}
+
+.legal-notices span {
+  font-weight: bold;
 }

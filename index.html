@@ -10,18 +10,21 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="./img/icone.jpg"
-            class="img-fluid custom-size"
-            alt="logo qui représente 4 cartes à jouer"
-        /></a>
-        <h1>CocoMagie</h1>
+        <img
+          class="logo"
+          src="./img/logo.webp"
+          alt="logo Cocomagie, représentant les 4 as d'un jeu de carte en éventail, avec une inscription cocomagie au dessus des cartes et une inscription close up en dessous des cartes "
+        />
         <button
           class="navbar-toggler"
           type="button"
@@ -38,9 +41,7 @@
             class="navbar-nav d-flex justify-content-around w-100 mb-2 mb-lg-0"
           >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Accueil</a
-              >
+              <a class="nav-link" aria-current="page" href="#">Accueil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#closeUp">Close Up</a>
@@ -61,50 +62,45 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="row pt-interrow">
+    <div class="background container-fluid">
+      <section class="row pt-interrow" id="presentation">
         <div class="col-md-6 col-12">
           <img
             class="img-fluid"
-            src="./img/pexels-photo-48013.webp"
+            src="./img/presentation_pic.webp"
             alt="un magicien portant une capuche qui dissimule son visage fait voler un paquet de cartes entre ses mains. "
           />
         </div>
+        <article
+          class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center"
+        >
+          <p class="text-justify">
+            <!-- Qui suis je -->
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+            impedit minus fugit consectetur neque dolorum saepe perspiciatis,
+            mollitia repellendus hic rerum eius ut similique porro explicabo
+            esse? Vero, veritatis rerum. Vero cum numquam hic obcaecati velit
+            quia! Iusto, blanditiis sapiente vel laudantium dolorem eligendi
+            deleniti a voluptatem, iure odio rerum quod! Assumenda soluta
+            ducimus, quos et quod totam quo unde!
+          </p>
+          <p class="text-justify">
+            <!-- ma magie -->
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+            impedit minus fugit consectetur neque dolorum saepe perspiciatis,
+            mollitia repellendus hic rerum eius ut similique porro explicabo
+            esse? Vero, veritatis rerum. Vero cum numquam hic obcaecati velit
+            quia! Iusto, blanditiis sapiente vel laudantium dolorem eligendi
+            deleniti a voluptatem, iure odio rerum quod! Assumenda soluta
+            ducimus, quos et quod totam quo unde!
+          </p>
+        </article>
+      </section>
+      <section id="closeUp" class="row pt-interrow">
         <div
           class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center"
         >
-          <div>
-            <h2>Qui suis-je ?</h2>
-            <p class="text-justify">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Inventore impedit minus fugit consectetur neque dolorum saepe
-              perspiciatis, mollitia repellendus hic rerum eius ut similique
-              porro explicabo esse? Vero, veritatis rerum. Vero cum numquam hic
-              obcaecati velit quia! Iusto, blanditiis sapiente vel laudantium
-              dolorem eligendi deleniti a voluptatem, iure odio rerum quod!
-              Assumenda soluta ducimus, quos et quod totam quo unde!
-            </p>
-          </div>
-          <div>
-            <h2>Ma magie</h2>
-            <p class="text-justify">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Inventore impedit minus fugit consectetur neque dolorum saepe
-              perspiciatis, mollitia repellendus hic rerum eius ut similique
-              porro explicabo esse? Vero, veritatis rerum. Vero cum numquam hic
-              obcaecati velit quia! Iusto, blanditiis sapiente vel laudantium
-              dolorem eligendi deleniti a voluptatem, iure odio rerum quod!
-              Assumenda soluta ducimus, quos et quod totam quo unde!
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div id="closeUp" class="row pt-interrow">
-        <div
-          class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center"
-        >
-          <div>
+          <article>
             <h2>Le close up</h2>
             <p class="text-justify">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -115,18 +111,19 @@
               dolorem eligendi deleniti a voluptatem, iure odio rerum quod!
               Assumenda soluta ducimus, quos et quod totam quo unde!
             </p>
-          </div>
+          </article>
         </div>
         <div class="col-md-6 col-12">
           <img
             class="img-fluid"
-            src="./img/pexels-photo-48013.webp"
-            alt="un magicien portant une capuche qui dissimule son visage fait voler un paquet de cartes entre ses mains. "
+            src="./img/closeup_pic.webp"
+            alt="image proche sur les mains d'un magicien en train de manipuler rapidement des cartes."
           />
         </div>
-      </div>
-
-      <div
+      </section>
+    </div>
+    <div class="container-fluid">
+      <section
         class="row pt-interrow d-flex justify-content-center"
         id="PreviousPrestation"
       >
@@ -159,42 +156,36 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="./img/pexels-photo-48013.webp"
-                class="d-block w-100"
-                alt="..."
-              />
+              <img src="./img/oleron.webp" class="d-block w-100" alt="..." />
               <div class="carousel-caption">
-                <h5>Spectacle au Camping Aloa Vacances d'Oléron</h5>
-                <p>
+                <h5 class="carousel-title">
+                  Spectacle au Camping Aloa Vacances d'Oléron
+                </h5>
+                <p class="carousel-description">
                   13 juillet 2023 - Spectacle de magie de 20 minutes devant un
                   public de tout âge.
                 </p>
               </div>
             </div>
             <div class="carousel-item">
-              <img
-                src="./img/pexels-photo-48013.webp"
-                class="d-block w-100"
-                alt="..."
-              />
+              <img src="./img/argeles.webp" class="d-block w-100" alt="..." />
               <div class="carousel-caption">
-                <h5>Spectacle au camping Al Sol d'Argeles</h5>
-                <p>
+                <h5 class="carousel-title">
+                  Spectacle au camping Al Sol d'Argeles
+                </h5>
+                <p class="carousel-description">
                   15 mai 2024 - Spectacle de magie de 30 minutes pour les moins
                   de 11 ans.
                 </p>
               </div>
             </div>
             <div class="carousel-item">
-              <img
-                src="./img/pexels-photo-48013.webp"
-                class="d-block w-100"
-                alt="..."
-              />
+              <img src="./img/stjuery.webp" class="d-block w-100" alt="..." />
               <div class="carousel-caption">
-                <h5>Animation au Centre Social et Culture de Saint-Juery</h5>
-                <p>
+                <h5 class="carousel-title">
+                  Animation au Centre Social et Culture de Saint-Juery
+                </h5>
+                <p class="carousel-description">
                   15 mars 2023 - Animation de magie d'une heure pour des enfants
                   de 4 à 12 ans.
                 </p>
@@ -220,17 +211,23 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
-
-      <div class="row pt-interrow d-flex justify-content-center" id="MySocial">
+      </section>
+    </div>
+    <div class="container-fluid second-background">
+      <section
+        class="row pt-interrow d-flex justify-content-center"
+        id="MySocial"
+      >
         <h2 class="text-center mb-4">Mes réseaux</h2>
-        <div class="col-6 d-flex justify-content-around">
+        <div class="col-6 d-flex justify-content-between social-div">
           <a
             class="social-link"
             target="_blank"
             href="https://www.tiktok.com/@cocomagie_officiel"
+            aria-label="logo du réseau social tiktok"
           >
             <svg
+              role="img"
               xmlns="http://www.w3.org/2000/svg"
               width="48"
               height="48"
@@ -247,8 +244,10 @@
             class="social-link"
             target="_blank"
             href="https://www.instagram.com/cocomagie_officiel/"
+            aria-label="logo du réseau social instagram"
           >
             <svg
+              role="img"
               xmlns="http://www.w3.org/2000/svg"
               width="48"
               height="48"
@@ -265,8 +264,10 @@
             class="social-link"
             target="_blank"
             href="https://www.youtube.com/@cocomagie_officiel"
+            aria-label="logo de youtube"
           >
             <svg
+              role="img"
               xmlns="http://www.w3.org/2000/svg"
               width="48"
               height="48"
@@ -280,9 +281,10 @@
             </svg>
           </a>
         </div>
-      </div>
+      </section>
 
-      <div class="row pt-interrow d-flex justify-content-center">
+      <section class="row pt-interrow d-flex justify-content-center LastVideo">
+        <h2 class="text-center mb-4">Ma dernière vidéo</h2>
         <div class="col-12 col-md-8">
           <div class="ratio ratio-16x9">
             <iframe
@@ -292,9 +294,12 @@
             ></iframe>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="row pt-interrow d-flex justify-content-center" id="ContactMe">
+      <section
+        class="row pt-interrow d-flex justify-content-center"
+        id="ContactMe"
+      >
         <h2 class="text-center">Contact</h2>
 
         <form action="">
@@ -328,17 +333,39 @@
             <label for="floatingTextarea">Votre message</label>
           </div>
           <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary" type="submit">Envoyer</button>
+            <button type="submit">Envoyer</button>
           </div>
         </form>
-      </div>
-
-      <div class="row pt-interrow">
-        <h3 class="text-center">footer</h3>
-      </div>
+      </section>
+      <button class="scrollTopBtn d-lg-none">↑</button>
     </div>
+    <footer class="pt-interrow">
+      <div class="legal-infos">
+        <p class="site-editor">
+          Éditeur du site : Corentin Michno mail@mail.com
+        </p>
+        <p class="site-developer">
+          Site développé par
+          <a href="https://jeremymaurel.github.io">Jérémy Maurel</a>
+        </p>
+        <p class="site-host">
+          Hébergeur : IONOS by 1&1, 7 Place de la Gare, BP 70109, 57200
+          Sarreguemines, France, Téléphone : +33 9 70 80 89 11
+        </p>
+      </div>
+      <p class="legal-notices">
+        Ce site ne promeut
+        <span>aucune activité commerciale ni rémunérée</span>. Les textes
+        présents sur ce site sont protégés par le droit d'auteur. Toute
+        reproduction est interdite sans autorisation préalable. Ce site ne
+        collecte aucune donnée personnelle à l'exception des informations
+        fournies volontairement via le formulaire de contact. Ces données sont
+        uniquement utilisées pour répondre aux messages et ne sont pas partagées
+        avec des tiers.
+      </p>
+    </footer>
 
-    <script src="./lastVideo.js"></script>
+    <script src="./index.js" type="module"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
