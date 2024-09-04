@@ -59,7 +59,7 @@ h1 {
 }
 
 section {
-  padding: 5% 15%;
+  padding: 10rem 15% 10rem 15%;
 }
 
 @media (max-width: 767.98px) {
@@ -79,6 +79,7 @@ section {
 
   .navbar {
     padding: 1rem;
+    position: static;
   }
 
   .logo {
