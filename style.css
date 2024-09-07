@@ -8,6 +8,7 @@ body {
 
 .text-justify {
   text-align: justify;
+  text-shadow: 0px 0 4px black;
 }
 
 .logo {
@@ -89,6 +90,10 @@ section {
   .social-link svg {
     height: 32px;
     color: #b8860b;
+  }
+
+  .presentation-pic {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -198,12 +203,14 @@ footer {
   width: 29%;
 }
 
-.site-developer a {
+.site-developer a,
+.editor-mail {
   text-decoration: none;
   color: black;
 }
 
-.site-developer a:hover {
+.site-developer a:hover,
+.editor-mail:hover {
   color: white;
   text-shadow: 1px 0 0 white;
 }
