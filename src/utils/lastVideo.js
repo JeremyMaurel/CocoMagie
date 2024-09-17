@@ -14,8 +14,13 @@ function getLastVideo() {
         const id = link.substr(link.indexOf('=') + 1);
         iframe.setAttribute(
           'src',
-          `https://youtube.com/embed/${id}?controls=0&autoplay=1`
+          `https://youtube.com/embed/${id}`
         );
+        iframe.setAttribute('title', 'YouTube video player');
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+        iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+       
       })
       .catch((error) => console.log('error', error));
   };
